@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데카르트 저서</title>
+<link rel = "stylesheet" href = "../css/style02.css">
+<script type="text/javascript">
+
+	// 로그인 페이지를 보여주는 함수
+	function login_window() {
+		// 형식) window.open("파일경로명", "창이름", "가로폭/세로폭높이");
+		window.open("../login/login.html", "로그인", "width = 380px, height = 250px");
+	}
+	function join_window() {
+		window.open("../login/join.html", "회원가입", "width = 380px, height = 250px");
+	}
+</script>
+</head>
+<body>
+	<div id = "container">
+		<header id = "head"> <!-- 웹 문서의 상단 영역 -->
+			<div id = "login">
+				<a href = ".././index.html">홈</a>
+				<a href = "#" onclick = "login_window()">로그인</a>
+				<a href = "#" onclick = "join_window()">회원가입</a>
+			</div>
+
+			<!-- 제목과 부제목을 그룹으로 묶어주는 역할을 하는 태그 -->
+			<hgroup>
+				<h1>데카르트, 서양 근대철학의 창시자</h1>
+				<h2>Rene Decartes, 1596 ~ 1650</h2>
+			</hgroup>
+		</header>
+
+		<!-- 웹 문서의 네비게이션 영역 - 메뉴가 설정되는 영역 -->
+		<nav id = "navi">
+			<ul>
+				<li><a href = "../birth/birth.html">탄 생</a></li>
+				<li><a href = "../writing/writing.html">저 서</a></li>
+				<li><a href = "../philosophy/philosophy.html">철 학</a></li>
+				<li><a href = "../saying/saying.html">명 언</a></li>
+			</ul>
+		</nav>
+
+		<!-- 웹 문서의 영역 설정 태그 - section 태그는 여러 번 사용이 가능함. -->
+		<section id = "content">
+      <h2 id = "title">저서 소개</h2>
+			<!-- section 영역의 본문 -->
+			<article>
+        <table border = "1" cellspacing = "0">
+          <tr>
+						<td rowspan = "7"><img src = "../image/book1.png"></td>
+					</tr>
+          <tr>
+						<td>책 제목</td>
+						<td>방법서설 / 성찰 / 철학의 원리 / 세계론 / 정념론 / 정신지도를 위한 규칙<br><sub>세계론/정념론/정신지도를 위한 규칙</sub></td>
+					</tr>
+          <tr>
+						<td>저자</td>
+						<td>르네 데카르트</td>
+					</tr>
+          <tr>
+						<td>출판사</td>
+						<td>동서문화사</td>
+					</tr>
+          <tr>
+						<td>발행</td>
+						<td>2016.06.20</td>
+					</tr>
+          <tr>
+						<td>책 정보(카테고리)</td>
+						<td>인문</td>
+					</tr>
+          <tr>
+						<td>책 소개</td>
+						<td>샤를 아담과 폴 탄네리 공편인 &lt데카르트 전집&gt에서 '방법서설', '성찰', '철학의 원리', '정념론' 그리고 '정신지도를 위한 규칙' 대표작을 번역 수록했다.</td>
+					</tr>
+        </table>
+        <table border = "1" cellspacing = "0">
+          <tr>
+						<td rowspan = "7"><img src = "../image/book2.png"></td>
+					</tr>
+          <tr>
+						<td>책 제목</td>
+						<td>정념론<br><sub>삶의 모든 좋은 것과 나쁜 것은 오직 정념에 의존한다</sub></td>
+					</tr>
+          <tr>
+						<td>저자</td>
+						<td>르네 데카르트</td>
+					</tr>
+          <tr>
+						<td>출판사</td>
+						<td>문예출판사</td>
+					</tr>
+          <tr>
+						<td>발행</td>
+						<td>2013.05.30</td>
+					</tr>
+          <tr>
+						<td>책 정보(카테고리)</td>
+						<td>서양철학</td>
+					</tr>
+          <tr>
+						<td>책 소개</td>
+						<td>인간의 감정과 이성의 화합을 통해 도덕적 주체의 본성을 규정한 데카르트 최후의 저작이다.</td>
+					</tr>
+        </table>
+			</article>
+		</section>
+
+		<!-- 문서의 보조 내용(광고, 알림) -->
+		<aside id = "sidebar">
+			<h3>저서 구입</h3>
+			<p>저서 구입을 원하시는 분들은 010-1111-1234로 연락주시기 바랍니다.</p>
+			<img src = "../image/book1.png" width = "130" height = "160">
+			<img src = "../image/book2.png" width = "130" height = "160">
+		</aside>
+
+		<!-- 문서의 하단 내용 -->
+		<footer id = "foot">
+			<p>글 : 홍 서 화 / 저술가, 번역가</p>
+			<address>E-Main : h27320867@gmail.com</address>
+			<p>Copyright &copy; All right reserved</p>
+		</footer>
+	</div> <!-- id = "login" end -->
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데카르트 명언</title>
+<link rel = "stylesheet" href = "../css/style04.css">
+<script type="text/javascript">
+
+	// 로그인 페이지를 보여주는 함수
+	function login_window() {
+		// 형식) window.open("파일경로명", "창이름", "가로폭/세로폭높이");
+		window.open("../login/login.html", "로그인", "width = 380px, height = 250px");
+	}
+	function join_window() {
+		window.open("../login/join.html", "회원가입", "width = 380px, height = 250px");
+	}
+</script>
+</head>
+<body>
+	<div id = "container">
+		<header id = "head"> <!-- 웹 문서의 상단 영역 -->
+			<div id = "login">
+				<a href = ".././index.html">홈</a>
+				<a href = "#" onclick = "login_window()">로그인</a>
+				<a href = "#" onclick = "join_window()">회원가입</a>
+			</div>
+
+			<!-- 제목과 부제목을 그룹으로 묶어주는 역할을 하는 태그 -->
+			<hgroup>
+				<h1>데카르트, 서양 근대철학의 창시자</h1>
+				<h2>Rene Decartes, 1596 ~ 1650</h2>
+			</hgroup>
+		</header>
+
+		<!-- 웹 문서의 네비게이션 영역 - 메뉴가 설정되는 영역 -->
+		<nav id = "navi">
+			<ul>
+				<li><a href = "../birth/birth.html">탄 생</a></li>
+				<li><a href = "../writing/writing.html">저 서</a></li>
+				<li><a href = "../philosophy/philosophy.html">철 학</a></li>
+				<li><a href = "../saying/saying.html">명 언</a></li>
+			</ul>
+		</nav>
+
+		<!-- 웹 문서의 영역 설정 태그 - section 태그는 여러 번 사용이 가능함. -->
+		<section id = "content">
+      <h2 id = "title">데카르트 명언</h2>
+			<!-- section 영역의 본문 -->
+			<article>
+        <p>&lt독서&gt<br>&quot좋은 책을 읽는 것은 과거 몇 세기의 가장 훌륭한 사람들과 이야기를 나누는 것과 같다.&quot</p>
+        <p>&lt믿음&gt<br>&quot진정 진리를 추구하려면 최소한 인생에 한 번은 가능한 한 모든 것에 대해서 의심을 품어봐야 한다.&quot</p>
+        <p>&lt생각&gt<br>&quot우리가 상상할 수 있는 모든 이상하고 믿기 어려운 것은 이미 철학자가 이야기한 적이 있는 것들이다.&quot</p>
+        <p>&lt그외&gt<br>&quot나는 생각한다. 고로 존재한다.&quot</p>
+        <p>&quot계속 나아가라. 계속 밀고 나아가라. 나는 내가 할 수 있는 모든 실수를 해 왔다.<br> 그렇더라도 나는 계속 나아가고 있다.&quot</p>
+        <p>&quot당신이 결정하지 않으려 한다 해도, 적어도 선택은 해야 한다.&quot</p>
+        <p>&quot누군가 나의 기분을 상하게 할 때, 나는 나의 영혼을 아주 높이 끌어 올려서<br> 그런 기분이 내 영혼까지 도달하지 못하도록 노력한다.&quot</p>
+        <p>&quot당신의 모든 삶이 꿈이 아니라는 것을 어떻게 장담할 수 있는가?&quot</p>
+			</article>
+		</section>
+
+		<!-- 문서의 보조 내용(광고, 알림) -->
+		<aside id = "sidebar">
+			<h3>저서 구입</h3>
+			<p>저서 구입을 원하시는 분들은 010-1111-1234로 연락주시기 바랍니다.</p>
+			<img src = "../image/book1.png" width = "130" height = "160">
+			<img src = "../image/book2.png" width = "130" height = "160">
+		</aside>
+
+		<!-- 문서의 하단 내용 -->
+		<footer id = "foot">
+			<p>글 : 홍 서 화 / 저술가, 번역가</p>
+			<address>E-Main : h27320867@gmail.com</address>
+			<p>Copyright &copy; All right reserved</p>
+		</footer>
+	</div> <!-- id = "login" end -->
+</body>
+</html>
