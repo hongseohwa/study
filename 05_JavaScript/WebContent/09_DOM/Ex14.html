@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	onload = () => {
+		let header = document.querySelector(".header");
+		header.onclick = () => {
+			alert("글자를 입력하셨군요.");
+			header.innerHTML = "글자 변경";
+		}
+	}
+</script>
+</head>
+<body>
+	<h2 class = "header">Header</h2>
+</body>
+</html>

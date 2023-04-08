@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	onload = function() {
+		
+		// 1. 이미지 태그를 만들어 보자.
+		let img_element = document.createElement("img");
+		
+		// 2. 속성이 필요한 경우에는 속성을 지정해 주어야 함.
+		img_element.src = "../images/pf2.png";
+		img_element.width = "150";
+		img_element.height = "150";
+		
+		// 3. DOM으로 만든 img 태그를 문서의 body에 추가해 주어야 한다.
+		document.body.appendChild(img_element);
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

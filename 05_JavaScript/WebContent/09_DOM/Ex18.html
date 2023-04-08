@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	/*
+		[문제] id가 myDiv 태그 밑에 아래와 같이 DOM을 이용하여 화면에 요소가 나타나게 해 주세요.
+			  <p>안녕하세요.</p>
+			    조건) "안녕하세요" 라는 글자는 빨간색으로 처리.
+	*/
+	
+	onload = () => {
+		let p_element = document.createElement("p");
+		let p_text = document.createTextNode("안녕하세요.");
+		p_element.appendChild(p_text);
+		
+		// div 태그에 p 태그를 자식 노드로 추가해야 한다.
+		let my = document.querySelector("#myDiv");
+		my.appendChild(p_element);
+		my.style.color = "red";
+	}
+	
+</script>
+</head>
+<body>
+	<div id = "myDiv">
+	</div>
+</body>
+</html>

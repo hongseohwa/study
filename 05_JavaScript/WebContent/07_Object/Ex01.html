@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	// 자바스크립트에서의 객체
+	// 자바에서의 객체의 개념과 유사.
+	// 속성 + 기능.
+	
+	/* 	자바스크립트에서 객체 생성 방법
+		형식) const(let) 객체명 = {
+					속성명 : "값",
+					속성명 : "값"
+			 }
+	*/
+	
+	const product = {
+		name : "Galaxy S23",
+		type : "핸드폰",
+		company : "삼성"
+	}
+		
+	// 객체의 속성을 화면에 출력하는 방법 - 첫번째 방법
+	document.write(`제품 이름 >>> ${product['name']}<br>`);
+	document.write(`제품 타입 >>> ${product["type"]}<br>`);
+	document.write(`제품 제조사 >>> ${product['company']}<br>`);
+	document.write(`<hr>`);
+	
+	// 객체의 속성을 화면에 출력하는 방법 - 두번째 방법
+	document.write(`제품 이름 >>> ${product.name}<br>`);
+	document.write(`제품 타입 >>> ${product.type}<br>`);
+	document.write(`제품 제조사 >>> ${product.company}<br>`);
+	document.write(`<hr>`);
+	
+	// 객체의 속성을 화면에 출력하는 방법 - 세번째 방법
+	for(let k in product) {
+		document.write(`${k}의 값 >>> ${product[k]}<br>`);
+	}
+		
+</script>
+</head>
+<body>
+
+</body>
+</html>

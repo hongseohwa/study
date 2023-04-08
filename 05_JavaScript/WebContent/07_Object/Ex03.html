@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	let product = {
+			"제품명" : "LG냉장고",
+			"입고가격" : 1500000,
+			"출고가격" : 2500000,
+			"제조사" : "LG전자"
+	}
+	
+	document.write(`<ul>`);
+	for(let k in product) {
+		document.write(`<li>${k} : ${product[k]}</li>`);
+	}
+	document.write(`</ul>`);
+</script>
+</head>
+<body>
+</body>
+</html>

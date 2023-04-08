@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	/*
+		A부터 B까지 더하는 함수를 만들어 호출해 보세요.
+		조건) 반환값을 받아서 화면에 출력할 것.
+	*/
+	
+	function sum(su1, su2) {
+		let sum = 0;
+		for(let i = su1; i <= su2; i++) {
+			sum += i;
+		}	
+		return sum;
+	}
+	
+	let num1 = Number(prompt("첫번째 정수 입력 : "));
+	let num2 = Number(prompt("두번째 정수 입력 : "));
+	document.write(`${num1}부터 ${num2}까지의 합 : ${sum(num1, num2)}<br>`);
+	
+</script>
+</head>
+<body>
+</body>
+</html>

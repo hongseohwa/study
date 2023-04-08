@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 키보드로 두 수와 연산자를 입력받아서 연산자에 해당하는 함수를 호출하여 연산 결과를 화면에 출력해 보세요.
+	let su1 = Number(prompt("첫번째 정수 입력 : "));
+	let su2 = Number(prompt("두번째 정수 입력 : "));
+	let op = prompt("연산자 입력 : ");
+	
+	switch(op) {
+		case "+" :
+			plus(su1, su2);
+			break;
+		case "-" :
+			minus(su1, su2);
+			break;
+		case "*" :
+			mul(su1, su2);
+			break;
+		case "/" :
+			divide(su1, su2);
+			break;
+		default :
+			alert("잘못된 연산자를 입력하셨습니다.");
+	}
+	
+	function plus(a1, a2) {
+		document.write(`두 수의 덧셈 >>> ${a1 + a2}<br>`);
+	}
+	function minus(a1, a2) {
+		document.write(`두 수의 뺄셈 >>> ${a1 - a2}<br>`);
+	}
+	function mul(a1, a2) {
+		document.write(`두 수의 곱셈 >>> ${a1 * a2}<br>`);
+	}
+	function divide(a1, a2) {
+		document.write(`두 수의 나눗셈 >>> ${(a1 / a2).toFixed(3)}<br>`);
+	}
+	
+</script>
+</head>
+<body>
+</body>
+</html>

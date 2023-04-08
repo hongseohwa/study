@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	/*
+		[문제] 아래와 같이 DOM을 추가해 보세요.
+		      <h2>제목</h2>
+		      <p>본문</p>
+	*/
+	
+	onload = function() {
+		let h2_element = document.createElement("h2");
+		let h2_text = document.createTextNode("제목");
+		let p_element = document.createElement("p");
+		let p_text = document.createTextNode("본문");
+		h2_element.appendChild(h2_text);
+		p_element.appendChild(p_text);
+		document.body.appendChild(h2_element);
+		document.body.appendChild(p_element);
+	}
+</script>
+</head>
+<body>
+</body>
+</html>

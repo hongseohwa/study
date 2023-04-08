@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My profile</title>
+	<link rel = "stylesheet" href = "../css/main.css">
+	<link rel = "stylesheet" href = "../css/style.css">
+</head>
+<body>
+
+	<!-- 
+		웹 문서의 특정한 선택자에 접근하는 방법.
+		1. querySelector() : 선택자 하나에 접근하는 방법.
+		형식) document.querySelector(선택자)
+		
+		2. querySelectorAll() : 여러 개의 선택자에 접근하는 방법.
+		형식) document.querySelectorAll(선택자)
+		
+		querySelector(선택자).innerText ==> 웹 브라우저 창에 보이는 내용을 가져옴.
+		querySelector(선택자).innerHTML ==> 요소 안에 있는 태그와 내용을 함께 가져옴.
+		querySelector(선택자).textContent ==> 요소의 내용을 가져오되, 소스에 있는대로 가져옴.
+		
+		정리하자면 웹 요소의 내용을 가져올 경우에는 innerText나 textContent 프로퍼티를 사용하면 되고,
+		요소 안에 있는 태그까지 같이 가져올 경우에는 innerHTML 프로퍼티를 사용하면 됨.
+	 -->
+	 
+	<h1 id = "title">My profile</h1>
+	<div id = "profile">
+		<img src = "../images/pf.png" alt = "도레미">
+		<div id = "desc">
+			<p class = "user">이름 : 도레미</p>
+			<p class = "user">주소 : 서울시 중구</p>
+			<p class = "user">연락처 : 1234-5678</p>
+		</div>
+	</div>
+	<script type="text/javascript" src = "../js/ex02.js"></script>
+</body>
+</html>

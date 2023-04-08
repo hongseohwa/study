@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel = "stylesheet" href = "../css/style.css">
+<script type="text/javascript">
+	onload = () => {
+		let page = document.querySelector("#sample_page");
+		let first = page.firstChild;
+		let p_element = document.createElement("p");
+		let p_text = document.createTextNode("추가내용1");
+		p_element.appendChild(p_text);
+		p_element.style.border = "3px solid red";
+		
+		// 형식) 부모노드.insertBefore(삽입할 노드, 기준점 노드);
+		page.insertBefore(p_element, first);
+		
+		// p_element 노드를 복사하는 방법
+		let p2_element = p_element.cloneNode(true);
+		page.appendChild(p2_element);
+	}
+</script>
+</head>
+<body>
+	<div id = "sample_page" class = "page">
+		샘플 페이지(div id = "sample_page" class = "page")
+		<div id = "header">
+			헤더 영역(div id = "header")
+		</div> <!-- id = "header" end -->
+		<div id = "content" class = "sample_content">
+			콘텐트 영역(div id = "content" class = "sample_content")
+			<div>
+				JavaScript란(div)
+				<p id = "data_1">자바스크립트 Core(p, id = "data_1")</p>
+				<p id = "data_2">자바스크립트 BOM(p, id = "data_2")</p>
+				<p id = "data_3">자바스크립트 DOM(p, id = "data_3")</p>
+				을 배운다는 것.
+			</div>
+			<div class = "content_data">
+				JavaScript에서 배울 내용(div class = "content_data")
+				<p>1. JavaScript BOM(p)</p>
+				<p>2. JavaScript DOM(p)</p>
+			</div> <!-- class = "content_data" end -->
+			<div class = "content_data">
+				JavaScript에서 배울 내용(div class = "content_data")
+				<p>1. JavaScript BOM(p)</p>
+				<p>2. JavaScript DOM(p)</p>
+			</div> <!-- class = "content_data" end -->
+		</div> <!-- id = "content" class = "sample_content" end -->
+		<div id = "footer">
+			푸터 영역(div id = "footer")
+		</div> <!-- id = "footer" end -->
+	</div> <!-- id = "sample_page" end -->
+</body>
+</html>

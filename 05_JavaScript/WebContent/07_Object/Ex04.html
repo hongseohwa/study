@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	const product = { };
+	
+	product.productName = prompt("제품명을 입력하세요.");
+	product.product_inputPrice = prompt("제품 입고가를 입력하세요.");
+	product.product_outputPrice = prompt("제품 출고가를 입력하세요.");
+	product.productCompany = prompt("제품의 제조사를 입력하세요.");
+	
+	document.write(`<ul>`);
+	for(let k in product) {
+		document.write(`<li>${k} : ${product[k]}</li>`);
+	}
+	document.write(`</ul>`);
+</script>
+</head>
+<body>
+</body>
+</html>

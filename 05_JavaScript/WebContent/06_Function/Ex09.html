@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function callThreeTimes(callback) {
+		for(let i = 0; i < 3; i++) {
+			callback(i);
+		}
+	}
+
+	// function print(su) {
+		// document.write(`${su}번째 함수 호출<br>`);
+	// }
+
+	callThreeTimes(function (su) {
+		document.write(`${su}번째 함수 호출<br>`);
+	});
+</script>
+</head>
+<body>
+</body>
+</html>

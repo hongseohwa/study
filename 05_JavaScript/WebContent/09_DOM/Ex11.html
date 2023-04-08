@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	// 문서에서 요소를 찾는 방법 - 3번째
+	// 3. getEelementsByClassName(class이름); ==> class 이름과 일치하는 요소를 배열로 가져오는 함수.
+	
+	onload = () => {
+		let texts = document.getElementsByClassName("user");
+		alert("class 요소 갯수 >>> " + texts.length);
+		for(let i = 0; i < texts.length; i++) {
+			texts[i].innerHTML = '<b style = "color : red;">class 요소</b>';
+		}
+	}
+	
+</script>
+</head>
+<body>
+	<p class = "user">이름 : 도레미</p>
+	<p class = "user">주소 : 서울시 중구</p>
+	<p class = "user">연락처 : 1234-5678</p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div align = "center">
+		<form name = "order">
+			<fieldset>
+				<legend>상품정보</legend>
+				<ul>
+					<li>상 품 : <input type = "text" id = "product" name = "product"></li>
+					<li>수 량 : <input type = "number" min = "1" max = "50"></li>
+					<li><input type = "submit" value = "주문"></li>
+				</ul>
+			</fieldset>
+		</form>
+	</div>
+	<script type = "text/javascript">
+		
+		// form 태그에 있는 특정 요소에 입력된 값을 가져오는 방법
+		// 형식) document.폼이름.name이름.value;
+		onload = function() {
+			let productName = document.order.product.value;
+			console.log("상품명 : " + productName);
+		}
+	</script>
+</body>
+</html>

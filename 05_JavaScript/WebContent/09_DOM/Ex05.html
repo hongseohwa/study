@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	// 현재 문서의 body 부분을 읽고 난 후에 자바스크립트를 실행하라는 의미를 가진 코드.
+	window.onload = function() {
+		
+		// 태그(요소)를 만드는 방법
+		// 형식) createElement("태그이름");
+		// 형식) createTextNode("텍스트");
+		
+		// 1. 태그(요소)를 만들어 보자.
+		let h1_element = document.createElement("h1");
+		
+		// 2. 텍스트 노드(요소)를 만들어 보자.
+		let text = document.createTextNode("방가방가 DOM");
+		
+		// 3. 텍스트노드를 h1 태그에 자식으로 추가.
+		h1_element.appendChild(text);
+		
+		// 4. h1 태그를 문서의 body 태그에 추가해 주어야 함.
+		document.body.appendChild(h1_element);
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

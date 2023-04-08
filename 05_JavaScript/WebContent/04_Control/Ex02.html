@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	/*
+		[문제1] 사용자 아이디 하나를 키보드로 입력 받아서 입력받은 아이디가 "hong" 이면 "hong님 환영합니다." 라는 문자열을 화면에 출력해 보세요.
+	*/
+	
+	let userId = prompt("아이디를 입력해주세요.");
+	if(userId == "hong") {
+		document.write(`${userId}님 환영합니다.`);
+	}
+	
+	document.write(`<hr>`);
+	
+	/*
+		[문제2] 키보드로 입력 받은 정수가 짝수이면, "입력 받은 정수는 짝수입니다." 라는 문자열을 화면에 출력해 보세요.
+	*/
+	
+	let num = Number(prompt("정수를 입력해주세요."));
+	if(num % 2 == 0) {
+		document.write(`입력 받은 정수는 짝수입니다.`);
+	}
+	
+	document.write(`<hr>`);
+	
+	/*
+		undefined 자료형
+		- 변수만 선언하고 해당 변수 안에 데이터가 안 들어 있는 상태에서 화면에 출력할 때 나오는 자료형.
+	*/
+	
+	let data;
+	document.write(`data >>> ${data}`);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

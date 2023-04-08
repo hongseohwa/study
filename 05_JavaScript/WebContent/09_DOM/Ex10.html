@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	onload = () => {
+		
+		// 문서에서 요소를 찾는 방법 - 2번째
+		// 2. getEelementsByTagName(tag이름); ==> tag 이름과 일치하는 요소를 배열로 가져오는 함수.
+		
+		let p_elements = document.getElementsByTagName('p');
+		alert('p태그 길이 >>> ' + p_elements.length);
+		p_elements[0].innerHTML = '<b>홍길동</b>';
+	}
+</script>
+</head>
+<body>
+	<h1>Title</h1>
+
+	<p>이름 : 도레미</p>
+	<p>주소 : 서울시 중구</p>
+	<p>연락처 : 1234-5678</p>
+</body>
+</html>

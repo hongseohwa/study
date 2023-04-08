@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	/*
+		[문제] 학생에 대한 정보를 키보드로 입력을 받아서 해당 학생 정보를 화면에 보여주세요.
+		(입력받을 학생 정보 : 이름, 학번, 학과, 연락처, 주소)
+	*/
+	
+	let student = { };
+	
+	student.이름 = prompt("학생 이름을 입력하세요.");
+	student.학번 = prompt("학생 학번을 입력하세요.");
+	student.학과 = prompt("학생 학과를 입력하세요.");
+	student.연락처 = prompt("학생 연락처를 입력하세요.");
+	student.주소 = prompt("학생 주소를 입력하세요.");
+	
+	// 속성을 삭제하는 방법
+	delete student.주소;
+	
+	document.write(`<ul>`);
+	for(let k in student) {
+		document.write(`<li>${k} : ${student[k]}</li>`);
+	}
+	document.write(`</ul>`);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
