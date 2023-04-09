@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script type="text/javascript">
+	
+	/*
+		탐색 선택자
+		1. eq(index) 선택자 ==> 지정한 인덱스가 참조하는 요소만 선택하는 선택자.
+		2. lt(index) 선택자 ==> 지정한 인덱스보다 작은(less then) 요소만 선택하는 선택자.
+		3. gt(index) 선택자 ==> 지정한 인덱스보다 큰(greater then) 요소만 선택하는 선택자.
+	*/
+	
+	$(function() {
+		$("ul li:eq(3)").css("background-color", "pink");
+		$("ul li:lt(3)").css("background-color", "yellow");
+		$("ul li:gt(3)").css("background-color", "skyblue");
+	});
+	
+</script>
+</head>
+<body>
+	<h2>탐색 선택자 - 위치 탐색 선택자</h2>
+	<ul class = "menu">
+		<li>내용1</li>
+		<li>내용2</li>
+		<li>내용3</li>
+		<li>내용4</li>
+		<li>내용5</li>
+		<li>내용6</li>
+		<li>내용7</li>
+	</ul>
+</body>
+</html>

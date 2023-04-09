@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script type="text/javascript">
+	
+	/*
+		toggle() : 선택한 요소가 보이면 숨기고, 숨겨져 있으면 보이게 하는 함수.
+		형식) $("요소선택").toggle(효과속도(ms), 콜백함수);
+	*/
+	
+	$(function() {
+		$(".btn").on("click", function() {
+			$("img").toggle(1500);
+		});
+	});
+	
+</script>
+</head>
+<body>
+	<img src = "images/img.jpg" alt = "튤립 이미지">
+	<br><br><br>
+	<button class ="btn">Toggle</button>
+</body>
+</html>

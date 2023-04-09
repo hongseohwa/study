@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script type="text/javascript">
+	$(function() {
+		// 자식 요소 선택자 : $("요소선택 > 자식요소")
+		$(".wrap > li").css("background-color", "yellow").css("border", "2px solid red").css("color", "blue");
+	});
+</script>
+</head>
+<body>
+	<h2>인접 관계 선택자</h2>
+	<ul class = "wrap">
+		<li>내용1</li>
+		<ul>
+			<li>내용2</li>
+			<li>내용3</li>
+		</ul>
+		<li>내용4</li>
+		<li>내용5</li>
+	</ul>
+</body>
+</html>

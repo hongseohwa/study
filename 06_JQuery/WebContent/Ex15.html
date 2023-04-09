@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script type="text/javascript">
+	$(function() {
+		// 형제(이전) 요소들 선택자 : $("요소선택").prevAll()
+		$(".content").prevAll().css("background-color", "yellow");
+	});
+</script>
+</head>
+<body>
+	<h2>인접 관계 선택자</h2>
+	<ul class = "wrap">
+		<li>내용1</li>
+		<li>내용2</li>
+		<li class = "content">내용3</li>
+		<li>내용4</li>
+	</ul>
+</body>
+</html>

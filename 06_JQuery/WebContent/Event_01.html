@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script type="text/javascript">
+	
+	/*
+		이벤트 종류
+		1. 마우스 이벤트 ==> 사용자가 마우스 버튼을 눌렀을 때 발생하는 이벤트.
+		2. 키보드 이벤트 ==> 사용자가 키보드를 눌렀을 때 발생하는 이벤트. 이 때 눌린 키에 대한 정보가 이벤트에 담김.
+		3. 태그 요소 고유 이벤트 ==> 요소마다 발생하는 고유의 이벤트.
+		4. 사용자 정의 이벤트 ==> 개발자가 직접 만들어 사용하는 이벤트.
+	*/
+	
+	$(function() {
+		// 이벤트 형식
+		// $("요소선택").on("이벤트이름", 이벤트리스너)
+		// ==> 이벤트 리스너는 보통 무명(익명) 클래스를 이용하여 처리를 함.
+		/* $(".btn").on("click", function() {
+			alert("이벤트에 오신 걸 환영합니다.");
+		}) */
+		$(".btn").on("click", alertFunction);
+	});
+	
+	function alertFunction() {
+		alert("이벤트에 오신 걸 환영합니다.");
+	}
+	
+	
+</script>
+</head>
+<body>
+	<button class = "btn">확인</button>
+</body>
+</html>

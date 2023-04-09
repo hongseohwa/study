@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script type="text/javascript">
+	
+	/*
+		mousemove() : 선택한 요소의 영역에서 마우스를 움직일 때 마다 이벤트가 발생.
+		형식) $("요소선택").mousemove(function(매개변수){...});
+	*/
+	
+	$(function() {
+		$(document).mousemove(function(e) {
+			let x = e.pageX; // 마우스의 x 좌표값을 구함.
+			let y = e.pageY; // 마우스의 y 좌표값을 구함.
+			
+			$("h2").text("x 좌표 : " + x + " / y 좌표 : " + y);
+		});
+	});
+	
+</script>
+</head>
+<body>
+	<h2></h2>
+</body>
+</html>

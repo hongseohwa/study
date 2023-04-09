@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script type="text/javascript">
+	
+	/*
+		- slideUp() : 선택한 요소를 숨길 때 사용하는 함수.
+		    형식) $("요소선택").slideUp(효과속도, 콜백함수);
+		- slideDown() : 선택한 요소를 나타낼 때 사용하는 함수.
+		    형식) $("요소선택").slideDown(효과속도, 콜백함수);
+		- slideToggle() : 요소가 나타나 있으면 숨기고, 요소가 숨겨져 있으면 나타내는 함수.
+		    형식) $("요소선택").slideToggle(효과속도, 콜백함수);
+	*/
+	
+	$(function() {
+		$(".btn1").on("click", function() {
+			$("img").slideUp(1000);
+		});
+		$(".btn2").on("click", function() {
+			$("img").slideDown(1000);
+		});
+		$(".btn3").on("click", function() {
+			$("img").slideToggle(1000);
+		});
+	});
+	
+</script>
+</head>
+<body>
+	<img src = "images/img.jpg" alt = "튤립 이미지">
+	<br><br><br>
+	<button class ="btn1">slideUp</button>
+	<button class ="btn2">slideDown</button>
+	<button class ="btn3">slideToggle</button>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script type="text/javascript">
+	
+	/*
+		효과 관련 함수
+		- hide() : 노출되어 있는 요소를 숨기는 기능을 하는 함수.
+	 	    형식) $("요소선택").hide(효과속도(ms), 콜백함수)
+	 	       * 콜백함수 : 효과가 완료되면 실행되는 함수. ==> 생략도 가능함.
+	 	- show() : 숨겨져 있던 요소를 노출시키는 기능을 하는 함수.
+	 	    형식) $("요소선택").show(효과속도(ms), 콜백함수)
+	*/
+	
+	$(function() {
+		$(".btn1").on("click", function() {
+			$("h2").hide(2000, function() {
+				alert("글자가 숨겨졌습니다.")
+			});
+		});
+		$(".btn1").on("click", function() {
+			$("h2").show(2000, function() {
+				alert("글자가 나타났습니다.")
+			});
+		});
+	});
+	
+</script>
+</head>
+<body>
+	<h2>효과 관련 내용</h2>
+	<button class = "btn1">Hide</button>
+	<button class = "btn1">Show</button>
+</body>
+</html>

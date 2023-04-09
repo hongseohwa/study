@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script type="text/javascript">
+	
+	/*
+		이벤트이름(목록)
+		blur, change, load, unload, resize, scroll, select, submit, click, dblclick, 
+		mousedown, mouseup, mousemove, mouseover, mouseout, mouseleave, 
+		focus, keydown, keypress, keyup, ...
+	*/
+	
+	$(function() {
+		$(".menu li").on("click", function() {
+			alert($(this).html());
+		});
+	});
+	
+</script>
+</head>
+<body>
+	<ul class = "menu">
+		<li>짜장면</li>
+		<li>짬뽕</li>
+		<li>탕수육</li>
+		<li>볶음밥</li>
+		<li>군만두</li>
+	</ul>
+</body>
+</html>
